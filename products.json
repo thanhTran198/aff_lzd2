@@ -1,12 +1,57 @@
 [
-    {
-      "title": "Áo Thun Nam Đẹp",
-      "image": "https://example.com/image1.jpg",
-      "affiliate_link": "https://www.lazada.vn/"
-    },
-    {
-      "title": "Giày Sneaker Thể Thao",
-      "image": "https://example.com/image2.jpg",
-      "affiliate_link": "https://www.lazada.vn/"
-    }
-  ]
+  {
+    "title": "Bơm cao áp 30mpa30mpa",
+    "image": "/bom.jpg",
+    "affiliate_link": "https://s.lazada.vn/s.5JwMT?cc"
+  },
+  {
+    "title": "Van xả có điều áp",
+    "image": "/van_xa.jpg",
+    "affiliate_link": "https://s.lazada.vn/s.5JDou"
+  },
+  {
+    "title": "bình nhôm đít bằng",
+    "image": "/binh.jpg",
+    "affiliate_link": "https://s.lazada.vn/s.5JDIP"
+  },
+  {
+    "title": "co L q trượt",
+    "image": "/co.jpg",
+    "affiliate_link": "https://s.lazada.vn/s.5JDFq"
+  },
+  {
+    "title": "đèn laze",
+    "image": "/den.jpg",
+    "affiliate_link": "https://s.lazada.vn/s.5JxZG"
+  },
+  {
+    "title": "đồng hồ Mpa dạ quang",
+    "image": "/dong_ho.jpg",
+    "affiliate_link": "https://s.lazada.vn/s.5Jx2P"
+  },
+  {
+    "title": "chì câu cá đủ loại size",
+    "image": "/chi.jpg",
+    "affiliate_link": "https://s.lazada.vn/s.5Jxj6"
+  },
+  {
+    "title": "Túi chống sốc",
+    "image": "/tui.jpg",
+    "affiliate_link": "https://s.lazada.vn/s.5JxOh"
+  },
+  {
+    "title": "Bơm máy",
+    "image": "/bom_may.jpg",
+    "affiliate_link": "https://s.lazada.vn/s.5JxpI"
+  },
+  {
+    "title": "Băng keo",
+    "image": "/bang_keo.jpg",
+    "affiliate_link": "https://s.lazada.vn/s.5JxI0"
+  },
+  {
+    "title": "Bi sắt 6.7.8mm",
+    "image": "/bi.jpg",
+    "affiliate_link": "https://s.lazada.vn/s.5JCaM"
+  }
+]
