@@ -7,29 +7,55 @@
     <style>
         body { font-family: Arial, sans-serif; text-align: center; }
         .product-list { display: flex; flex-wrap: wrap; justify-content: center; }
-        .product { width: 200px; margin: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; }
+        .product {
+            width: 220px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-decoration: none; /* Loại bỏ gạch chân */
+            color: inherit; /* Giữ màu chữ mặc định */
+            display: block;
+            text-align: center;
+            background: #f9f9f9;
+        }
         .product img { width: 100%; height: auto; border-radius: 5px; }
-        .product a { text-decoration: none; color: blue; font-weight: bold; }
+        .product h3 { margin: 10px 0; font-size: 16px; }
+        .btn {
+            display: inline-block;
+            padding: 8px 12px;
+            margin-top: 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .btn:hover { background-color: #0056b3; }
     </style>
 </head>
 <body>
     <h1>Danh Sách Sản Phẩm</h1>
+    <h3>tất cả sản phẩm bạn mua sẽ được bảo hành đổi trả miễn phí trong 15 ngày kể từ ngày nhận hàng.</h3>
     <div class="product-list" id="product-list"></div>
 
     <script>
-        fetch('products.json') // Nếu file trên GitHub Pages, đổi thành URL raw của file JSON
+        fetch('products.json') // Nếu file JSON trên GitHub, dùng raw URL của file
             .then(response => response.json())
             .then(data => {
                 const productList = document.getElementById("product-list");
                 data.forEach(product => {
-                    const productDiv = document.createElement("div");
-                    productDiv.classList.add("product");
-                    productDiv.innerHTML = `
+                    const productLink = document.createElement("a");
+                    productLink.href = product.affiliate_link;
+                    productLink.target = "_blank"; // Mở link trong tab mới
+                    productLink.classList.add("product");
+
+                    productLink.innerHTML = `
                         <img src="${product.image}" alt="${product.title}">
                         <h3>${product.title}</h3>
-                        <a href="${product.affiliate_link}" target="_blank">Mua Ngay</a>
+                        <span class="btn">Xem Chi Tiết Sản Phẩm</span>
                     `;
-                    productList.appendChild(productDiv);
+                    productList.appendChild(productLink);
                 });
             })
             .catch(error => console.error("Lỗi khi tải JSON:", error));
